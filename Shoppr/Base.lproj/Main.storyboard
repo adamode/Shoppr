@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fWJ-xh-zPY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shoppr-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Shoppr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dKT-Tz-xmy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uBC-4H-BG4">
+                                    <size key="itemSize" width="236" height="280"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="cell" id="Ht3-i1-QRL" customClass="MainCell" customModule="Shoppr" customModuleProvider="target">
+                                        <rect key="frame" x="69.5" y="0.0" width="236" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="236" height="280"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="63V-Vd-LXA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="236" height="280"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="63V-Vd-LXA" firstAttribute="leading" secondItem="Ht3-i1-QRL" secondAttribute="leading" id="4bY-Dc-oTJ"/>
+                                            <constraint firstItem="63V-Vd-LXA" firstAttribute="top" secondItem="Ht3-i1-QRL" secondAttribute="top" id="R1s-ke-nUQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="63V-Vd-LXA" secondAttribute="trailing" id="beR-ek-iz6"/>
+                                            <constraint firstAttribute="bottom" secondItem="63V-Vd-LXA" secondAttribute="bottom" id="mcl-hs-K6Q"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgCell" destination="63V-Vd-LXA" id="FJn-Sg-Sym"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dKT-Tz-xmy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LvL-SF-f4o"/>
+                            <constraint firstItem="dKT-Tz-xmy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Wce-XU-Des"/>
+                            <constraint firstAttribute="trailing" secondItem="dKT-Tz-xmy" secondAttribute="trailing" id="Zgt-g5-HVv"/>
+                            <constraint firstItem="dKT-Tz-xmy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bFE-rq-Vgz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shoppr" id="9JX-1q-equ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dKT-Tz-xmy" id="KBf-Yu-Cqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="cZi-gt-FQW">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="UyJ-BR-4tr" customClass="SecondVC" customModule="Shoppr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DWH-03-5Xs"/>
+                        <viewControllerLayoutGuide type="bottom" id="lG2-dv-Xaz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbB-f6-Uez">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU HAVE BEEN PLAYED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCR-ie-akj">
+                                <rect key="frame" x="89" y="323" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DCR-ie-akj" firstAttribute="centerY" secondItem="RbB-f6-Uez" secondAttribute="centerY" id="lJK-fY-DYW"/>
+                            <constraint firstItem="DCR-ie-akj" firstAttribute="centerX" secondItem="RbB-f6-Uez" secondAttribute="centerX" id="qOb-uL-8FW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ik-Ks-Kcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4YJ-yH-x12">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fWJ-xh-zPY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gqI-wG-HEv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KgL-Kj-2T4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mP3-ma-zwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-facebook" width="48" height="48"/>
+    </resources>
+</document>
